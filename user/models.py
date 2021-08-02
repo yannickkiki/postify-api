@@ -20,6 +20,8 @@ class User(AbstractBaseUser, PermissionsMixin):
     email = models.EmailField(unique=True)
     password = models.CharField(max_length=128)
 
+    email_verified_at = models.DateTimeField(null=True)
+
     is_staff = models.BooleanField(
         default=False, help_text='Designates whether the user can log into this admin site.'
     )

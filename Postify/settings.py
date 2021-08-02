@@ -25,7 +25,10 @@ SECRET_KEY = 'django-insecure-#z_+7(umhu*^zi&-sxqgk!6ak%a8fdc1r-ox=7ka)+e(5pd5l)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'postify-ui.yourdomain.com'
+]
 
 
 # Application definition
